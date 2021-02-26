@@ -28,10 +28,6 @@ function back()
     end
 end
 
-function tp_space()
-    game.player.teleport({68,-7},"Nauvis Orbit")
-end
-
 function give(item, amount)
     game.player.insert{name=item, count=amount}
     game.print({"", game.player.name, " ", "使用不光彩的手段获得了", "", amount,"", "个", " ", "[img=item.", "", item, "]", game.item_prototypes[item].localised_name, "", "！"})
